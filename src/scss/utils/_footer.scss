@@ -1,0 +1,57 @@
+.page-footer {
+  border-top: 1px solid var(--grey-bright);
+}
+
+.page-footer__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include tablet {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  > p > span {
+    color: var(--orange);
+  }
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+
+  @include tablet {
+    gap: 0;
+    flex-direction: row;
+  }
+}
+
+input {
+  height: 40px;
+  width: 155px;
+  padding: 5px;
+  border: 1px solid var(--grey-bright);
+
+  @include tablet {
+    width: 230px;
+  }
+
+  @include desktop {
+    height: 42px;
+  }
+
+  &::placeholder {
+    color: var(--grey);
+  }
+}

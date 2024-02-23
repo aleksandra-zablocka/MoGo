@@ -1,0 +1,262 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-image: linear-gradient(to bottom, rgba(231, 129, 130, 0.9), rgba(239, 217, 138, 0.9)),
+    image-set(url("../images/eagle-x1.jpg") 1x, url("../images/eagle-x2.jpg") 2x);
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+
+  @include tablet {
+    min-height: 650px;
+  }
+
+  @include desktop {
+    min-height: 1000px;
+  }
+}
+
+.hero__container {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  @include desktop {
+    gap: 120px;
+  }
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  max-width: 400px;
+  gap: 40px;
+
+  @include desktop {
+    max-width: 600px;
+  }
+}
+
+.services__container {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include tablet {
+    padding-top: 40px;
+  }
+
+  @include desktop {
+    padding-top: 60px;
+  }
+
+  > h3 {
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 3px;
+      background-color: var(--orange);
+      width: 60px;
+    }
+  }
+}
+
+.services__list {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @include tablet {
+    gap: 40px;
+  }
+}
+
+.services__item {
+  max-width: 420px;
+  width: 80%;
+  padding: 10px;
+  position: relative;
+
+  @include tablet {
+    max-width: 350px;
+  }
+
+  > p {
+    margin-top: 10px;
+    color: var(--grey);
+    font-family: Roboto, sans-serif;
+  }
+
+  > svg {
+    position: absolute;
+    top: 25px;
+    left: -40px;
+    fill: var(--blue);
+  }
+}
+
+.team__container {
+  padding-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  > h3 {
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 3px;
+      background-color: var(--orange);
+      width: 60px;
+    }
+  }
+
+  > p {
+    width: 80%;
+    max-width: 960px;
+    margin-top: 60px;
+    text-align: center;
+  }
+}
+
+.team__list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  @include desktop {
+    flex-direction: row;
+    margin-top: 60px;
+  }
+}
+
+.team__figure {
+  position: relative;
+  transition: filter 0.3s ease;
+  height: calc(570px * 2 / 3);
+  width: calc(380px * 2 / 3);
+
+  @include tablet {
+    height: 570px;
+    width: 380px;
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    transform: scale(1.015);
+    transition: transform 0.2s ease;
+  }
+
+  &:hover > img,
+  &:focus > img {
+    cursor: pointer;
+    box-shadow: 6px 6px 0px 0px var(--blue);
+  }
+
+  &:hover > .social-media,
+  &:focus > .social-media {
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  > figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    height: 45px;
+
+    @include tablet {
+      bottom: 30px;
+    }
+
+    > p {
+      font-style: italic;
+      color: var(--grey);
+    }
+  }
+
+  > img {
+    object-fit: cover;
+    object-position: center;
+    transition: box-shadow 0.3s ease;
+    height: calc(470px * 2 / 3);
+    width: calc(380px * 2 / 3);
+
+    @include tablet {
+      width: 380px;
+      height: 470px;
+    }
+  }
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, rgba(231, 129, 130, 0.9), rgba(239, 217, 138, 0.9));
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  height: calc(470px * 2 / 3);
+  width: calc(380px * 2 / 3);
+
+  @include tablet {
+    width: 380px;
+    height: 470px;
+  }
+
+  &__icon {
+    background-color: var(--yellow);
+    fill: var(--orange);
+    padding: 10px;
+    border: 1px solid #f3818154;
+
+    &:hover,
+    &:focus {
+      background-color: var(--orange);
+      fill: white;
+    }
+  }
+}
