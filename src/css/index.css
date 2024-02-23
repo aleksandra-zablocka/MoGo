@@ -448,7 +448,7 @@ input {
 }
 @media screen and (min-width: 1199px) {
   input {
-    height: 42px;
+    height: 41px;
   }
 }
 input::-webkit-input-placeholder {
