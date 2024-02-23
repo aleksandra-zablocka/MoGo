@@ -208,9 +208,28 @@ header {
   font-weight: 500;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  position: relative;
+}
+.navigation__item::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 2px;
+  background-color: var(--yellow);
+  width: 60px;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 .navigation__item:focus, .navigation__item:hover {
   color: var(--yellow);
+}
+.navigation__item:focus::after, .navigation__item:hover::after {
+  opacity: 1;
 }
 
 .navigation__icon {
