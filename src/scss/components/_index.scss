@@ -7,7 +7,11 @@
     image-set(url("../images/eagle-x1.jpg") 1x, url("../images/eagle-x2.jpg") 2x);
   background-position: center;
   background-size: cover;
-  min-height: 650px;
+  min-height: 500px;
+
+  @include tablet {
+    min-height: 650px;
+  }
 
   @include desktop {
     min-height: 1000px;
@@ -20,7 +24,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
+
+  @include tablet {
+    gap: 50px;
+  }
 
   @include desktop {
     gap: 120px;
@@ -35,7 +43,7 @@
   text-align: center;
   color: white;
   max-width: 400px;
-  gap: 40px;
+  gap: 30px;
 
   @include desktop {
     max-width: 600px;
