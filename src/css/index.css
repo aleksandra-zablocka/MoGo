@@ -502,12 +502,7 @@ input::placeholder {
   background-image: linear-gradient(to bottom, rgba(231, 129, 130, 0.9), rgba(239, 217, 138, 0.9)), image-set(url("../images/eagle-x1.jpg") 1x, url("../images/eagle-x2.jpg") 2x);
   background-position: center;
   background-size: cover;
-  min-height: 500px;
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    min-height: 650px;
-  }
+  min-height: 650px;
 }
 @media screen and (min-width: 1199px) {
   .hero {
@@ -607,6 +602,7 @@ input::placeholder {
 }
 
 .services__list {
+  padding-left: 35px;
   margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -620,6 +616,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .services__list {
+    padding-left: 15px;
     gap: 40px;
   }
 }
