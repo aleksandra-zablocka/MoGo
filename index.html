@@ -13,10 +13,11 @@
       rel="stylesheet"
     />
     <script src="./src/scripts/mobile-menu.js" defer></script>
+    <script src="./src/scripts/menu-background.js" defer></script>
   </head>
   <body>
     <header>
-      <div class="header__container container">
+      <div class="header__container">
         <a class="logo" href="./index.html">MoGo</a>
         <div class="navigation">
           <div class="navigation--mobile">
@@ -65,7 +66,7 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="hero__container container">
           <div class="hero__text">
             <h2>Creative Template<br /></h2>
@@ -143,112 +144,106 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aut aliquid unde at? Deleniti optio ipsam sint
             ducimus illo corrupti quaerat, iste adipisci sed nam a suscipit provident explicabo reprehenderit.
           </p>
+          <div class="team__grid">
+            <figure class="team__figure">
+              <div class="social-media">
+                <a href="https://facebook.com"
+                  ><svg class="social-media__icon" width="40px" height="40px">
+                    <use href="src/images/icons/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+                <a href="https://twitter.com"
+                  ><svg class="social-media__icon" width="40px" height="40px">
+                    <use href="src/images/icons/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+                <a href="https://pinterest.com"
+                  ><svg class="social-media__icon" width="40px" height="40px">
+                    <use href="src/images/icons/icons.svg#pinterest"></use>
+                  </svg>
+                </a>
+                <a href="https://instagram.com"
+                  ><svg class="social-media__icon" width="40px" height="40px">
+                    <use href="src/images/icons/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </div>
+              <img src="src/images/Matthew-x1.jpg" alt="team member Matthew" srcset="src/images/Matthew-x2.jpg 2x" />
+              <figcaption>
+                <h5>Matthew Dix</h5>
+                <p>Graphic Design</p>
+              </figcaption>
+            </figure>
+            <figure class="team__figure">
+              <div class="social-media">
+                <a href="https://facebook.com"
+                  ><svg class="social-media__icon" width="40px" height="40px">
+                    <use href="src/images/icons/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+                <a href="https://twitter.com"
+                  ><svg class="social-media__icon" width="40px" height="40px">
+                    <use href="src/images/icons/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+                <a href="https://pinterest.com"
+                  ><svg class="social-media__icon" width="40px" height="40px">
+                    <use href="src/images/icons/icons.svg#pinterest"></use>
+                  </svg>
+                </a>
+                <a href="https://instagram.com"
+                  ><svg class="social-media__icon" width="40px" height="40px">
+                    <use href="src/images/icons/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </div>
+              <img
+                src="src/images/Christopher-x1.jpg"
+                alt="team member Christopher"
+                srcset="src/images/Christopher-x2.jpg 2x"
+              />
+              <figcaption>
+                <h5>Christopher Campbell</h5>
+                <p>Branding/UX design</p>
+              </figcaption>
+            </figure>
 
-          <ul class="team__list">
-            <li class="team__item">
-              <figure class="team__figure">
-                <div class="social-media">
-                  <a href="https://facebook.com"
-                    ><svg class="social-media__icon" width="40px" height="40px">
-                      <use href="src/images/icons/icons.svg#facebook"></use>
-                    </svg>
-                  </a>
-                  <a href="https://twitter.com"
-                    ><svg class="social-media__icon" width="40px" height="40px">
-                      <use href="src/images/icons/icons.svg#twitter"></use>
-                    </svg>
-                  </a>
-                  <a href="https://pinterest.com"
-                    ><svg class="social-media__icon" width="40px" height="40px">
-                      <use href="src/images/icons/icons.svg#pinterest"></use>
-                    </svg>
-                  </a>
-                  <a href="https://instagram.com"
-                    ><svg class="social-media__icon" width="40px" height="40px">
-                      <use href="src/images/icons/icons.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </div>
-                <img src="src/images/Matthew-x1.jpg" alt="team member Matthew" srcset="src/images/Matthew-x2.jpg 2x" />
-                <figcaption>
-                  <h5>Matthew Dix</h5>
-                  <p>Graphic Design</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="team__figure">
-                <div class="social-media">
-                  <a href="https://facebook.com"
-                    ><svg class="social-media__icon" width="40px" height="40px">
-                      <use href="src/images/icons/icons.svg#facebook"></use>
-                    </svg>
-                  </a>
-                  <a href="https://twitter.com"
-                    ><svg class="social-media__icon" width="40px" height="40px">
-                      <use href="src/images/icons/icons.svg#twitter"></use>
-                    </svg>
-                  </a>
-                  <a href="https://pinterest.com"
-                    ><svg class="social-media__icon" width="40px" height="40px">
-                      <use href="src/images/icons/icons.svg#pinterest"></use>
-                    </svg>
-                  </a>
-                  <a href="https://instagram.com"
-                    ><svg class="social-media__icon" width="40px" height="40px">
-                      <use href="src/images/icons/icons.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </div>
-                <img
-                  src="src/images/Christopher-x1.jpg"
-                  alt="team member Christopher"
-                  srcset="src/images/Christopher-x2.jpg 2x"
-                />
-                <figcaption>
-                  <h5>Christopher Campbell</h5>
-                  <p>Branding/UX design</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="team__figure">
-                <div class="social-media">
-                  <a href="https://facebook.com"
-                    ><svg class="social-media__icon" width="40px" height="40px">
-                      <use href="src/images/icons/icons.svg#facebook"></use>
-                    </svg>
-                  </a>
-                  <a href="https://twitter.com"
-                    ><svg class="social-media__icon" width="40px" height="40px">
-                      <use href="src/images/icons/icons.svg#twitter"></use>
-                    </svg>
-                  </a>
-                  <a href="https://pinterest.com"
-                    ><svg class="social-media__icon" width="40px" height="40px">
-                      <use href="src/images/icons/icons.svg#pinterest"></use>
-                    </svg>
-                  </a>
-                  <a href="https://instagram.com"
-                    ><svg class="social-media__icon" width="40px" height="40px">
-                      <use href="src/images/icons/icons.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </div>
-                <img src="src/images/Michael-x1.jpg" alt="team member Michael" srcset="src/images/Michael-x2.jpg 2x" />
-                <figcaption>
-                  <h5>Michael Fertig</h5>
-                  <p>Developer</p>
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
+            <figure class="team__figure">
+              <div class="social-media">
+                <a href="https://facebook.com"
+                  ><svg class="social-media__icon" width="40px" height="40px">
+                    <use href="src/images/icons/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+                <a href="https://twitter.com"
+                  ><svg class="social-media__icon" width="40px" height="40px">
+                    <use href="src/images/icons/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+                <a href="https://pinterest.com"
+                  ><svg class="social-media__icon" width="40px" height="40px">
+                    <use href="src/images/icons/icons.svg#pinterest"></use>
+                  </svg>
+                </a>
+                <a href="https://instagram.com"
+                  ><svg class="social-media__icon" width="40px" height="40px">
+                    <use href="src/images/icons/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </div>
+              <img src="src/images/Michael-x1.jpg" alt="team member Michael" srcset="src/images/Michael-x2.jpg 2x" />
+              <figcaption>
+                <h5>Michael Fertig</h5>
+                <p>Developer</p>
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__container container">
+      <div class="page-footer__container">
         <p>&copy; 2016 MoGo free PSD template by <span>Laaqlq</span></p>
         <form>
           <input type="email" id="email" name="email" placeholder="Your Email..." required />

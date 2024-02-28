@@ -12,7 +12,7 @@ function showMobileModal() {
 
   mobileModal.innerHTML = `
   <header>
-  <div class="header__container container">
+  <div class="header__container">
   <span class="mobile__close-btn">&times;</span>
   <a class="logo" href="./index.html">MoGo</a>
   </header>

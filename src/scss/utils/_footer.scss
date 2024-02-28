@@ -1,5 +1,33 @@
+body {
+  position: relative;
+
+  @include desktop {
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 62px;
+      left: 0;
+      height: 1px;
+      background-color: var(--grey-bright);
+      width: 100%;
+      z-index: 999;
+    }
+  }
+}
+
 .page-footer {
   border-top: 1px solid var(--grey-bright);
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px;
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include desktop {
+    border-top: none;
+  }
 }
 
 .page-footer__container {
